@@ -1,0 +1,399 @@
+<!-- Code Created by Dylan Wilson for HDMB !-->
+
+<style>
+      
+html {
+      font-family: "Poppins";
+      position: relative;
+      min-height: 100%;
+}
+
+body{
+      background-color:white;
+}
+
+
+.gap_between_divs{
+      padding:5px;
+}
+
+.gap_between_divs_large{
+      margin:195px;
+}
+
+.header-alert{
+      background-color:white;
+      color:black;
+}
+
+body {
+      margin: 0 0;
+      padding: 0;
+}
+
+ul {
+      margin: 0;
+      padding:0;
+      list-style-type: none;
+      background: #111;
+      position: relative;
+}
+
+ul li {
+      display: inline-block;
+}
+
+ul li a {
+      color: whitesmoke;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+}
+
+ul li:hover {
+      background: lightgrey;
+}
+
+ul ul {
+      position: absolute;
+      min-width: 200px;
+      background: black;
+      display: none;
+}
+
+ul ul li {
+      display: block;
+      background: black;
+      padding:0px 25px;
+      font-size:15px;
+}
+
+ul li:hover ul {
+      display: block;
+}
+
+ul li i {
+      color: white;
+      float: right;
+      padding-left: 20px;
+}
+
+nav div {
+      background: black;
+      color: white;
+      font-size: 24px;
+      padding: 0.6em;
+      cursor: pointer;
+      display: none;
+      text-align:right;
+}
+
+@media(max-width: 875px){
+      .floated_right{
+            display:none;
+      }
+}
+
+@media(max-width: 755px) {
+      nav div {
+            display: block;
+      }
+
+      ul {
+            display: none;
+            position: static;
+            background: black;
+      }
+
+      ul li {
+            display: block;
+      }
+
+      ul ul {
+            position: static;
+            background: #e3e3e3;
+      }
+
+      .floated_right{
+            display:none;
+      }
+      
+}
+
+
+.floated_right{
+      float:right;
+}
+
+
+
+.footer {
+    width: 100%;
+    background-color:black;
+    color:white;
+    text-align:center;
+    font-size:20px;
+      padding:15px;
+
+    }
+
+.footer p a{
+      padding:0px;
+      text-decoration:none;
+      color:white;
+}
+
+.footer p a:hover{
+      text-decoration:underline;
+      color:#999;
+}
+
+div.gallery {
+      border: 1px solid #ccc;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 0px;
+      text-align: center;
+      margin:0;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+    
+    @media only screen and (max-width: 1200px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+    
+    @media only screen and (max-width: 600px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+    
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .gap_between_divs_large{
+          padding:150px;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <link rel="icon" 
+      type="image/png" 
+      href="https://i.imgur.com/7hUQaCy.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>HDMB | Quality Products at Cheap Prices!</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+</head>
+<body>
+
+      <div class="header-alert">
+            <p style="font-size:35px;text-align:center;padding:0;margin:0;"><strong>HDMB.com</strong></p>
+            <p style="font-size:20px;text-align:center;padding:0;margin:0;">Quality Electrical Products at Cheap Prices!</p>
+      </div>
+
+
+      <nav>
+            <div>
+                  <i class="fa fa-bars"></i>
+            </div>
+
+            <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Social Media <i class="fa fa-sort-desc"></i></a>
+                        <ul>
+                              <li><a href="#">Twitter</a></li>
+                              <li><a href="#">GitHub</a></li>
+                              <li><a href="#">Discord</a></li>
+                              <li><a href="#">Twitch</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="#">Releases <i class="fa fa-sort-desc"></i></a>
+                        <ul>
+                              <li><a href="#">Python Quiz with Score System</a></li>
+                              <li><a href="#">Python Lottery Numbers Generator</a></li>
+                              <li><a href="#">Python Log In System</a></li>
+                              <li><a href="#">Python Discord Bot</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li class="floated_right"><a href="#">Log In</a></li>
+            </ul>
+      </nav>
+
+      <script type="text/javascript">
+
+      $("nav div").click(function() {
+            $("ul").slideToggle();
+            $("ul ul").css("display", "none");
+      });
+
+      $("ul li").click(function() {
+            $("ul ul").slideUp();
+            $(this).find('ul').slideToggle();
+      });
+
+      $(window).resize(function() {
+            if($(window).width() > 768) {
+                  $("ul").removeAttr('style');
+            }
+      });
+
+      </script>
+
+<div class="gap_between_divs">
+
+</div>
+
+<div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="pic1.jpg">
+          <img src="https://i.imgur.com/8yrBABw.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">
+            <h3>Product Name</h3>
+            <p>Product description goes here.</p>
+            <h4>Product Price</h4>
+      </div>
+      </div>
+    </div>
+    
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="pic2.jpg">
+          <img src="https://i.imgur.com/8yrBABw.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">
+            <h3>Product Name</h3>
+            <p>Product description goes here.</p>
+            <h4>Product Price</h4>
+      </div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="pic3.jpg">
+          <img src="https://i.imgur.com/8yrBABw.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">
+            <h3>Product Name</h3>
+            <p>Product description goes here.</p>
+            <h4>Product Price</h4>
+      </div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="pic4.jpg">
+          <img src="https://i.imgur.com/8yrBABw.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">
+              <h3>Product Name</h3>
+              <p>Product description goes here.</p>
+              <h4>Product Price</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="pic3.jpg">
+          <img src="https://i.imgur.com/8yrBABw.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">
+            <h3>Product Name</h3>
+            <p>Product description goes here.</p>
+            <h4>Product Price</h4>
+      </div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="pic4.jpg">
+          <img src="https://i.imgur.com/8yrBABw.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">
+            <h3>Product Name</h3>
+            <p>Product description goes here.</p>
+            <h4>Product Price</h4>
+      </div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="pic3.jpg">
+          <img src="https://i.imgur.com/8yrBABw.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">
+            <h3>Product Name</h3>
+            <p>Product description goes here.</p>
+            <h4>Product Price</h4>
+      </div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="pic3.jpg">
+          <img src="https://i.imgur.com/8yrBABw.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">
+            <h3>Product Name</h3>
+            <p>Product description goes here.</p>
+            <h4>Product Price</h4>
+      </div>
+      </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+
+
+<p style="text-align:center;padding:5px;">For business inquires or support please contact us <a href="mailto:hdmbelectonrics@gmail.com">here</a></p>
+
+<div class="footer">
+      <p style="padding:0;margin:0;">&copy HDMB & Partners 2020</p>
+      <p style="padding:0;margin:0;font-size:15px;"><a href="#">Branding Guidlines</a> | <a href="#">Data & Analytics</a></p>
+</div>
+
+
+</body>
+</html>
